@@ -31,3 +31,4 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
 # ------------------------------- Other ends -------------------------------
 
+git clone https://github.com/linkease/istore.git package/luci-app-store
