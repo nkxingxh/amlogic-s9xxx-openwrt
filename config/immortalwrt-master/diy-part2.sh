@@ -34,6 +34,32 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 git clone https://github.com/linkease/istore.git package/luci-app-store
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-# 替换 luci-app-qbittorrent
-rm -rf package/luci/applications/luci-app-qbittorrent
-git clone https://github.com/sbwml/luci-app-qbittorrent.git package/luci/applications/luci-app-qbittorrent
+# 替换 https://github.com/immortalwrt/luci 的 luci-app-qbittorrent
+rm -rf feeds/luci/applications/luci-app-qbittorrent
+git clone https://github.com/sbwml/luci-app-qbittorrent.git feeds/luci/applications/luci-app-qbittorrent
+
+
+# 从插件合集中获取部分插件
+mkdir package_community
+
+# kiddin9 的插件仓库 (opkg 软件源 https://dl.openwrt.ai/packages-23.05/aarch64_generic/kiddin9/)
+git clone https://github.com/kiddin9/openwrt-packages.git package_community/kiddin9
+
+# kenzok8 的插件仓库 (opkg 软件源 https://op.dllkids.xyz/packages/aarch64_generic/)
+# git clone https://github.com/kenzok8/small-package.git package_community/kenzok8
+
+# 统一文件共享
+mv -f package_community/kiddin9/luci-app-unishare package
+mv -f package_community/kiddin9/unishare package
+mv -f package_community/kiddin9/webdav2 package
+
+# 文件传输
+mv -f package_community/kiddin9/luci-app-filetransfer package
+mv -f package_community/kiddin9/luci-lib-fs package
+
+# quickstart
+mv -f package_community/kiddin9/luci-app-quickstart package
+mv -f package_community/kiddin9/quickstart package
+
+rm -rf package_community
+# end of package_community
