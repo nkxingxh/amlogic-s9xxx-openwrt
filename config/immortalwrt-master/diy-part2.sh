@@ -33,3 +33,7 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
 git clone https://github.com/linkease/istore.git package/luci-app-store
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
+# 替换 luci-app-qbittorrent
+rm -rf package/luci/applications/luci-app-qbittorrent
+git clone https://github.com/sbwml/luci-app-qbittorrent.git package/luci/applications/luci-app-qbittorrent
