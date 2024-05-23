@@ -69,5 +69,9 @@ mv -f package_community/kiddin9/luci-lib-fs package
 mv -f package_community/kiddin9/luci-app-quickstart package
 mv -f package_community/kiddin9/quickstart package
 
+# CUPS 打印
+mv -f package_community/kiddin9/luci-app-cupsd package
+mv -f package_community/kiddin9/cups-bjnp package
+
 rm -rf package_community
 # end of package_community

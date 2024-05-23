@@ -4396,8 +4396,8 @@ CONFIG_PACKAGE_libxtables=y
 #
 # Printing
 #
-# CONFIG_PACKAGE_libcups is not set
-# CONFIG_PACKAGE_libcupsimage is not set
+CONFIG_PACKAGE_libcups=y
+CONFIG_PACKAGE_libcupsimage=y
 # end of Printing
 
 #
@@ -4857,7 +4857,7 @@ CONFIG_PACKAGE_libiperf3=y
 # CONFIG_PACKAGE_libiw is not set
 CONFIG_PACKAGE_libiwinfo=y
 # CONFIG_PACKAGE_libjaylink is not set
-# CONFIG_PACKAGE_libjpeg-turbo is not set
+CONFIG_PACKAGE_libjpeg-turbo=y
 CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libkeyutils is not set
 # CONFIG_PACKAGE_libkmod is not set
@@ -4973,7 +4973,7 @@ CONFIG_PACKAGE_libpcre2=y
 # CONFIG_PACKAGE_libpfring is not set
 # CONFIG_PACKAGE_libpkcs11-spy is not set
 # CONFIG_PACKAGE_libpkgconf is not set
-# CONFIG_PACKAGE_libpng is not set
+CONFIG_PACKAGE_libpng=y
 CONFIG_PACKAGE_libpopt=y
 # CONFIG_PACKAGE_libpri is not set
 # CONFIG_PACKAGE_libprotobuf-c is not set
@@ -5254,6 +5254,10 @@ CONFIG_PACKAGE_luci-lib-fs=y
 # iStore 首页
 CONFIG_PACKAGE_luci-app-quickstart=y
 CONFIG_PACKAGE_quickstart=y
+
+# CUPS 打印
+CONFIG_PACKAGE_luci-app-cupsd=y
+CONFIG_PACKAGE_cups-bjnp=y
 
 # CONFIG_PACKAGE_luci-app-3ginfo-lite is not set
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
@@ -6493,11 +6497,11 @@ CONFIG_PACKAGE_wsdd2=y
 #
 # Printing
 #
-# CONFIG_PACKAGE_cups is not set
+CONFIG_PACKAGE_cups=y
 # CONFIG_PACKAGE_cups-bsd is not set
 # CONFIG_PACKAGE_cups-client is not set
-# CONFIG_PACKAGE_cups-filters is not set
-# CONFIG_PACKAGE_cups-ppdc is not set
+CONFIG_PACKAGE_cups-filters=y
+CONFIG_PACKAGE_cups-ppdc=y
 # CONFIG_PACKAGE_p910nd is not set
 # end of Printing
 
