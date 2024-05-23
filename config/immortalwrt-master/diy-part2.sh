@@ -31,7 +31,9 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
 # ------------------------------- Other ends -------------------------------
 
+# iStore 应用商店
 git clone https://github.com/linkease/istore.git package/luci-app-store
+# 应用过滤
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
 # 替换 https://github.com/immortalwrt/luci 的 luci-app-qbittorrent
@@ -53,11 +55,17 @@ mv -f package_community/kiddin9/luci-app-unishare package
 mv -f package_community/kiddin9/unishare package
 mv -f package_community/kiddin9/webdav2 package
 
+# 易有云
+mv -f package_community/kiddin9/luci-app-linkease package
+mv -f package_community/kiddin9/linkease package
+mv -f package_community/kiddin9/ffmpeg-remux package
+mv -f package_community/kiddin9/linkmount package
+
 # 文件传输
 mv -f package_community/kiddin9/luci-app-filetransfer package
 mv -f package_community/kiddin9/luci-lib-fs package
 
-# quickstart
+# iStore 首页
 mv -f package_community/kiddin9/luci-app-quickstart package
 mv -f package_community/kiddin9/quickstart package
 
