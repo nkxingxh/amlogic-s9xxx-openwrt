@@ -889,6 +889,14 @@ refactor_bootfs() {
         sed -i "s|^overlay_prefix=.*|overlay_prefix=${FAMILY}|g" ${armbianenv_conf_file}
     }
 
+    # 清理没有使用到的 u-boot-*.bin
+    rm -rf u-boot-*.bin
+
+    # 清理没有使用到的 dtb 文件
+    mv dtb/${PLATFORM}/${FDTFILE} dtb/${PLATFORM}/${FDTFILE}.bak
+    rm -rf dtb/${PLATFORM}/*.dtb
+    mv dtb/${PLATFORM}/${FDTFILE}.bak dtb/${PLATFORM}/${FDTFILE}
+
     # Check device configuration files
     [[ -f "${uenv_conf_file}" || -f "${rename_extlinux_file}" || -f "${armbianenv_conf_file}" ]] || error_msg "Missing [ /boot/*Env.txt ]"
 }
