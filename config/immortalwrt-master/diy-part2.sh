@@ -73,5 +73,8 @@ mv -f package_community/kiddin9/quickstart package
 mv -f package_community/kiddin9/luci-app-cupsd package
 mv -f package_community/kiddin9/cups-bjnp package
 
+# turboacc 网络加速
+mv -f package_community/kiddin9/luci-app-turboacc package
+
 rm -rf package_community
 # end of package_community
