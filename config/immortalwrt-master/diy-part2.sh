@@ -76,5 +76,9 @@ mv -f package_community/kiddin9/cups-bjnp package
 # turboacc 网络加速
 mv -f package_community/kiddin9/luci-app-turboacc package
 
+# 哪吒监控
+mv -f package_community/kiddin9/luci-app-nezha package
+mv -f package_community/kiddin9/openwrt-nezha package/nezha-agent
+
 rm -rf package_community
 # end of package_community
