@@ -75,7 +75,10 @@ mv -f package_community/kiddin9/quickstart package
 
 # CUPS 打印
 mv -f package_community/kiddin9/luci-app-cupsd package
-mv -f package_community/kiddin9/cups-bjnp package
+rm -rf feeds/packages/utils/cups
+mv -f package_community/kiddin9/cups feeds/packages/utils
+rm -rf feeds/packages/utils/cups-bjnp
+mv -f package_community/kiddin9/cups-bjnp feeds/packages/utils
 
 # turboacc 网络加速
 mv -f package_community/kiddin9/luci-app-turboacc package
