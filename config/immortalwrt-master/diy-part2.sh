@@ -33,8 +33,12 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
 # iStore 应用商店
 git clone https://github.com/linkease/istore.git package/luci-app-store
+
 # 应用过滤
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
+# 哪吒监控
+git clone https://github.com/Erope/openwrt_nezha.git package/openwrt_nezha
 
 # 替换 https://github.com/immortalwrt/luci 的 luci-app-qbittorrent
 rm -rf feeds/luci/applications/luci-app-qbittorrent
@@ -76,9 +80,9 @@ mv -f package_community/kiddin9/cups-bjnp package
 # turboacc 网络加速
 mv -f package_community/kiddin9/luci-app-turboacc package
 
-# 哪吒监控
-mv -f package_community/kiddin9/luci-app-nezha package
-mv -f package_community/kiddin9/openwrt-nezha package/nezha-agent
+# 哪吒监控 (不从合集中引入)
+# mv -f package_community/kiddin9/luci-app-nezha package
+# mv -f package_community/kiddin9/openwrt-nezha package/nezha-agent
 
 rm -rf package_community
 # end of package_community
