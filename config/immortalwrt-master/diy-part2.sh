@@ -34,7 +34,8 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # iStore 应用商店
 git clone https://github.com/linkease/istore.git package/luci-app-store
 
-# 应用过滤
+# 应用过滤 (已知问题: 目前不支持 6.6 内核和 nftables, 新版本 op 编译出来基本上没用)
+# 使用 OpenAppFilter 官方源需要启用 luci-app-oaf, appfilter, kmod-oaf
 # git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 # 替换内核模块 kmod-oaf
 # rm -rf feeds/packages/net/open-app-filter
