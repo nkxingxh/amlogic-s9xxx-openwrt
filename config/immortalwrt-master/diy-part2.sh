@@ -35,7 +35,9 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 git clone https://github.com/linkease/istore.git package/luci-app-store
 
 # 应用过滤
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+# git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+# 替换内核模块 kmod-oaf
+# rm -rf feeds/packages/net/open-app-filter
 
 # 哪吒监控
 git clone https://github.com/Erope/openwrt_nezha.git package/openwrt_nezha
