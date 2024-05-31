@@ -6533,7 +6533,7 @@ CONFIG_PACKAGE_wsdd2=y
 # CONFIG_PACKAGE_genl is not set
 # CONFIG_PACKAGE_igmpproxy is not set
 # CONFIG_PACKAGE_ip-bridge is not set
-# CONFIG_PACKAGE_ip-full is not set
+CONFIG_PACKAGE_ip-full=y
 # CONFIG_PACKAGE_ip-tiny is not set
 # CONFIG_PACKAGE_lldpd is not set
 # CONFIG_PACKAGE_mcproxy is not set
@@ -7410,7 +7410,7 @@ CONFIG_PACKAGE_hd-idle=y
 CONFIG_PACKAGE_lsblk=y
 # CONFIG_PACKAGE_lvm2 is not set
 # CONFIG_PACKAGE_lvm2-selinux is not set
-# CONFIG_PACKAGE_mdadm is not set
+CONFIG_PACKAGE_mdadm=y
 # CONFIG_PACKAGE_mtools is not set
 # CONFIG_PACKAGE_nvme-cli is not set
 CONFIG_PACKAGE_parted=y
@@ -8102,13 +8102,13 @@ CONFIG_PACKAGE_sed=y
 # CONFIG_PACKAGE_setools-sesearch is not set
 # CONFIG_PACKAGE_setserial is not set
 # CONFIG_PACKAGE_sexpect is not set
-# CONFIG_PACKAGE_shadow-utils is not set
+CONFIG_PACKAGE_shadow-utils=y
 # CONFIG_PACKAGE_shared-mime-info is not set
 CONFIG_PACKAGE_shellsync=y
 # CONFIG_PACKAGE_sipcalc is not set
 # CONFIG_PACKAGE_sispmctl is not set
 # CONFIG_PACKAGE_slide-switch is not set
-# CONFIG_PACKAGE_smartd is not set
+CONFIG_PACKAGE_smartd=y
 # CONFIG_PACKAGE_smartd-mail is not set
 CONFIG_PACKAGE_smartmontools=y
 # CONFIG_PACKAGE_smartmontools-drivedb is not set
